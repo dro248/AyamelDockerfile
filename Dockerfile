@@ -2,7 +2,7 @@
 #FROM ubuntu:latest
 FROM tutum/lamp:latest
 
-# Install setup tools
+# Install necessary tools
 RUN apt-get update
 RUN apt-get install -y wget unzip git
 
