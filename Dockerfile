@@ -1,6 +1,9 @@
 # Building the yvideo image from a Dockerfile
 FROM tutum/lamp:latest
 
+# Copy Conf file
+COPY application.conf /Ayamel-Examples/conf/
+
 # Install necessary tools
 RUN apt-get update && apt-get install -y \
     git \
