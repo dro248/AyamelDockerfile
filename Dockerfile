@@ -16,6 +16,7 @@ RUN git clone https://github.com/BYU-ARCLITE/subtitle-timeline-editor.git
 RUN git clone https://github.com/BYU-ARCLITE/EditorWidgets.git
 RUN git clone https://github.com/BYU-ARCLITE/TimedText.git
 
+# Cleanup
 RUN mv Ayamel.js /var/www/html/ 
 RUN mv subtitle-timeline-editor /var/www/html/ 
 RUN mv EditorWidgets /var/www/html/ 
