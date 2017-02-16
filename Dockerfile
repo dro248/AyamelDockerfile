@@ -36,3 +36,7 @@ RUN mv /activator-dist-1.3.12 /PLAY
 
 # Copy Conf file
 COPY application.conf /Ayamel-Examples/conf/
+
+# Copy run & run run.sh script
+COPY runApp.sh /
+RUN ./runApp.sh
