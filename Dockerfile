@@ -39,4 +39,4 @@ COPY application.conf /Ayamel-Examples/conf/
 
 # Copy run & run run.sh script
 COPY runApp.sh /
-RUN ./runApp.sh
+#RUN ./runApp.sh
