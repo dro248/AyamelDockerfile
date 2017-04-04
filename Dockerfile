@@ -17,5 +17,10 @@ RUN apt-get install -y oracle-java8-installer
 # Get Play Framework
 RUN wget https://downloads.typesafe.com/typesafe-activator/1.3.12/typesafe-activator-1.3.12.zip
 
+# Make PLAY directory
+RUN mkdir /PLAY 
+RUN unzip /typesafe-activator-1.3.12.zip
+RUN mv /activator-dist-1.3.12 /PLAY
+
 #Copy run & run run.sh script (this is run from Compose file)
 COPY runApp.sh /
